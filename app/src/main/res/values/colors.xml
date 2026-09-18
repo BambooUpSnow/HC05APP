@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 页面与卡片背景 -->
+    <color name="bg_page">#0F172A</color>
+    <color name="bg_card">#111827</color>
+    <color name="bg_row">#1E293B</color>
+    <color name="divider">#334155</color>
+
+    <!-- 主题强调色 -->
+    <color name="accent">#38BDF8</color>
+    <color name="accent_dark">#0EA5E9</color>
+
+    <!-- 指标颜色 -->
+    <color name="heart">#FF5370</color>
+    <color name="spo2">#22D3EE</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">#E2E8F0</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_on_accent">#062033</color>
+
+    <!-- 状态胶囊 -->
+    <color name="chip_on">#22C55E</color>
+    <color name="chip_on_text">#052E16</color>
+    <color name="chip_off">#1E293B</color>
+    <color name="chip_off_text">#94A3B8</color>
+
+</resources>

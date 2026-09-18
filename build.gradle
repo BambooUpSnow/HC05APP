@@ -1,0 +1,13 @@
+// ============================================================
+//  工程级 build.gradle
+//  只声明插件版本，不在此处 apply（各模块自行 apply）
+// ============================================================
+plugins {
+    id 'com.android.application' version '8.1.4' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
+}
+
+// 统一清理任务，方便执行 ./gradlew clean
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

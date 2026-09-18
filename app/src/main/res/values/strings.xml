@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 应用名 -->
+    <string name="app_name">手语翻译助手</string>
+
+    <!-- 顶部状态 -->
+    <string name="status_connected">已连接</string>
+    <string name="status_connected_fmt">已连接 · %1$s</string>
+    <string name="status_disconnected">未连接</string>
+    <string name="status_connecting">连接中…</string>
+
+    <!-- 按钮 -->
+    <string name="btn_connect">连接</string>
+    <string name="btn_disconnect">断开</string>
+    <string name="btn_retry">重试</string>
+    <string name="btn_clear">清屏</string>
+    <string name="btn_replay">重播</string>
+    <string name="btn_ping">测试连接</string>
+    <string name="dialog_cancel">取消</string>
+
+    <!-- 当前手势卡片 -->
+    <string name="label_current">当前手势</string>
+    <string name="gesture_placeholder">等待识别…</string>
+    <string name="gesture_code_fmt">手势代码 %1$s</string>
+    <string name="gesture_code_empty">手势代码 --</string>
+    <string name="gesture_time_fmt">识别时间 %1$s</string>
+
+    <!-- 指标卡片 -->
+    <string name="label_heart_rate">心率</string>
+    <string name="label_spo2">血氧</string>
+    <string name="label_trend">心率趋势（最近 60 次）</string>
+    <string name="value_placeholder">--</string>
+    <string name="unit_bpm">bpm</string>
+    <string name="unit_percent" formatted="false">%</string>
+
+    <!-- 历史 -->
+    <string name="label_history">识别历史</string>
+    <string name="history_empty">暂无记录，连接设备后开始识别</string>
+
+    <!-- 底部工具条 -->
+    <string name="switch_speak">手机朗读</string>
+    <string name="volume_fmt">音量 %1$d</string>
+
+    <!-- 设备选择 -->
+    <string name="dialog_choose_device">选择已配对的蓝牙设备</string>
+    <string name="unknown_device">未知设备</string>
+
+    <!-- 提示信息 -->
+    <string name="hint_bt_unsupported">本机不支持蓝牙，无法使用连接功能</string>
+    <string name="hint_bt_off">蓝牙未开启，请先在系统设置中打开蓝牙</string>
+    <string name="hint_no_paired">没有已配对的设备，请先在系统设置中与 HC-05 配对</string>
+    <string name="hint_permission_denied">未授予蓝牙权限，无法连接设备</string>
+    <string name="hint_permission_ok">权限已获取，请选择要连接的设备</string>
+    <string name="hint_connecting_fmt">正在连接 %1$s …</string>
+    <string name="hint_connected_fmt">已连接到 %1$s</string>
+    <string name="hint_connect_failed">连接失败，请确认 HC-05 已上电并在配对范围内，然后点击“重试”</string>
+    <string name="hint_disconnected">已断开连接</string>
+    <string name="hint_not_connected">尚未连接设备，请先点击“连接”</string>
+    <string name="hint_sent_fmt">已发送 %1$s</string>
+    <string name="hint_send_failed">发送失败，连接可能已断开</string>
+    <string name="hint_link_lost">连接已断开</string>
+    <string name="hint_ok_fmt">设备回复：OK %1$s</string>
+    <string name="hint_err_fmt">设备返回错误：%1$s</string>
+    <string name="hint_stream_failed">无法获取蓝牙数据流，请重新连接</string>
+
+</resources>

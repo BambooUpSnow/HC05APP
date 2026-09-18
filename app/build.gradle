@@ -1,0 +1,50 @@
+// ============================================================
+//  app 模块 build.gradle
+//  纯 Kotlin + 经典 View（XML 布局），不使用 Compose / ViewBinding
+// ============================================================
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.signlanguage'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.signlanguage"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            // 演示工程默认不混淆，避免反射/TTS 回调被裁剪
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        // 明确关闭 ViewBinding，全部使用 findViewById
+        viewBinding false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.core:core-ktx:1.12.0'
+}

@@ -1,0 +1,24 @@
+// ============================================================
+//  手语翻译助手 —— Gradle 根设置文件
+//  HC-05 蓝牙串口客户端（STM32 端发送协议行）
+// ============================================================
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    // 只允许在下面的 repositories 中声明仓库，模块内不再写仓库
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "SignLanguageAssistant"
+include ':app'
